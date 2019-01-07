@@ -1,30 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Music Bootstrap template</title>
     <!--FontAwesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
     <!--styleSheet-->
-    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="stylesheet" href="main.css" />
+    <!--styleSheet-->
+    <link rel="stylesheet" href="style/style.css" />
     <!--bootstrap 4-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+<!--OWL CAROUSEL-->
+    <link rel="stylesheet" href="owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-md-3 col-lg-2 order-2 order-md-1 col-10 mx-auto d-flex flex-column no-padding sidebar"
+        >
+          <!--music col sidebar-->
+          <div class="music mt-0">
+            <ul class="list-group list-group-flush">
+              <div class="list-group-item nav-logo py-2">
+                <img
+                  class="img-fluid my-3"
+                  src="images/logo.png"
+                  width="300"
+                  alt="logo"
+                />
+              </div>
 
-<h2>Hello John</h2>
-<i class="fab fa-500px"></i>
+              <div class="list-group-item.text-uppercase.nav-color.mt-3">
+                Music
+              </div>
+              <a href="" class="list-group-item list-group-item-action">
+                <i class=" fa fa-music mr-3 nav-color"></i> Featured
+              </a>
+
+              <a href="" class="list-group-item list-group-item-action">
+                <i class=" fa fa-microphone mr-3 nav-color"></i> Radio
+              </a>
+              <a href="" class="list-group-item list-group-item-action">
+                <i class=" fa fa-list mr-3 nav-color"></i> Song List
+              </a>
+
+              <a href="" class="list-group-item list-group-item-action">
+                <i class=" fa fa-tv mr-3 nav-color"></i> Tv
+              </a>
+              <a href="" class="list-group-item list-group-item-action">
+                <i class=" fa fa-heart mr-3 nav-color"></i> Liked
+              </a>
+
+              <a href="" class="list-group-item list-group-item-action">
+                <i class=" fa fa-download mr-3 nav-color"></i> Download
+              </a>
+
+              <a href="" class="list-group-item list-group-item-action">
+                <i class=" fa fa-play mr-3 nav-color"></i> Play
+              </a>
+            </ul>
+          </div>
+
+          <!---my Music Col -->
+          <!---my Music List -->
+          <div>
+            <div class="my-music-list">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item text-uppercase nav-color mt-3">
+                  My Music List
+                </li>
+                <a
+                  href=""
+                  class="list-group-item list-group-item-action text-uppercase"
+                  >pop</a
+                >
+                <a
+                  href=""
+                  class="list-group-item list-group-item-action text-uppercase"
+                  >rock</a
+                >
+                <a
+                  href=""
+                  class="list-group-item list-group-item-action text-uppercase"
+                  >heavy Metal</a
+                >
+              </ul>
+
+              <!--button-->
+              <a href="" class="btn nav-btn w-50 mt-4 mx-3 d-block">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <!--main Content-->
+
+        <div class="col-md-9 col-lg-10 order-1 order-md-2 content bg-light p-5">
+          <!--Main row-->
+          <div class="row">
+            <div class="col d-flex flex-wrap justify-content-between pb-5">
+              <!--nav search-->
+              <div class="nav-search d-flex flex-wrap">
+                <div class="nav-icons mr-5 align-self-center">
+                  <a href=""><i class="fa fa-chevron-left icon mr-3"></i></a>
+                  <a href=""><i class="fa fa-chevron-right icon mr-3"></i></a>
+                </div>
+                <!--form-->
+                <form>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      placeholder="Search..."
+                    />
+                    <span class="input-group-addon"
+                      ><i class=" fa fa-search"></i
+                    ></span>
+                  </div>
+                </form>
+              </div>
+              <!--nav search-->
+
+              <!--avatar-->
+              <div class="avatar-icon d-flex flex-wrap"></div>
+              <h6>John Doe</h6>
+              <a href=""
+                ><img
+                  src="https://content-static.upwork.com/uploads/2014/10/01073427/profilephoto1.jpg"
+                  class="img-fluid rounded-circle"
+                  width="50"
+              /></a>
+            </div>
+          </div>
+          <hr />
+        
 
 
 
 
+        <!--slider navigation Owl Carousel-->
+        <div class="row">
+          <div class="col pt-4 pb-2"><h4>Top Songs</h4></div>
+        </div>
+        <!--pictures row-->
+        <div class="row mb-5">
+          <div class="col-12">
+            <div id="top-songs" class="owl-carousel owl-theme">
+              
+              <!--one Horizontal Slide-->
+                <div class="item text-center">
+                <h6 class="mb-0">Artist</h6>
+                <p class="text-muted mb-8">Song</p>
+                <div class="img-container">
+                  <img
+                    src="https://media.wnyc.org/i/800/0/l/85/1/takeawayguitar.jpg"
+                    class="img-fluid"
+                    alt="music"
+                  />
 
-<!--Javascript-->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+                  <a href=""><i class="fa fa-music"></i></a>
+                </div>
+              </div><!--side ends-->
+
+
+               <!--Two Horizontal Slide-->
+               <div class="item text-center">
+                    <h6 class="mb-0">Artist</h6>
+                    <p class="text-muted mb-8">Song</p>
+                    <div class="img-container">
+                      <img
+                        src="https://i.ytimg.com/vi/dB_-DcmAmOc/maxresdefault.jpg"
+                        class="img-fluid"
+                        alt="music"
+                      />
     
-</body>
+                      <a href=""><i class="fa fa-music"></i></a>
+                    </div>
+                  </div><!--side ends-->
+
+                  <!--Two Horizontal Slide-->
+               <div class="item text-center">
+                    <h6 class="mb-0">Artist</h6>
+                    <p class="text-muted mb-8">Song</p>
+                    <div class="img-container">
+                      <img
+                        src="https://i.ytimg.com/vi/dB_-DcmAmOc/maxresdefault.jpg"
+                        class="img-fluid"
+                        alt="music"
+                      />
+    
+                      <a href=""><i class="fa fa-music"></i></a>
+                    </div>
+                  </div><!--side ends-->
+
+
+            </div>
+          </div>
+        </div>
+        <!--pictures row-->
+
+
+
+    </div>
+    <!--main Content ends-->
+      </div>
+    </div>
+
+
+
+    <!--Javascript-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="jquery.min.js"></script>
+<!--Owl js-->
+<script src="owl/owl.carousel.min.js"></script>
+ <script src="owl/owl.js"></script>
+  </body>
 </html>

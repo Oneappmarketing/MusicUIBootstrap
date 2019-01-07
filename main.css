@@ -1,0 +1,101 @@
+body{
+    font-weight:bolder;
+ }
+ 
+ hr{
+   background-color: #f5f5f5; 
+ }
+ 
+ .nav-logo{
+     background-color: #f15025!important; 
+ 
+ }
+ .no-padding{
+     padding:0;
+ }
+
+ .sidebar{
+
+    border-right:2px solid #ced8ce;
+    background-color:white;
+ }
+ .sidebar .list-group-item{
+border:none;
+ }
+
+ .nav-color{
+    color:#ced8ce; 
+ }
+
+ .sidebar .nav-btn{
+border-radius:30px;
+font-size:20px;
+background-color:#f15025;
+color:#353531;
+
+ }
+
+ .sidebar .nav-btn:hover{
+background-color:#353531;
+color:#f15025!important
+
+ }
+
+ /*main Content*/
+
+ owl-item.img-container{
+
+position: relative;
+background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+overflow: hidden;
+
+ }
+
+ .owl-item .fa{
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+font-size:50px;
+color:white;
+padding:10px;
+border:1px solid white;
+border-radius:50%;
+visibility: hidden;
+
+ }
+
+ .owl-item img{
+     transition:transform 4s ease-in-out;
+ }
+
+ .owl-item:hover img{
+opacity:0.5;
+transform:scale(1.3);
+
+ }
+
+ owl-item:hover .fa{
+
+visibility:visible;
+background-color:rgba(0,0,0,0.5);
+}
+
+.icon{
+    color: #353531;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #f15025;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+
+
+}
+
+.icon:hover{
+    background:#869791;
+    color:white;
+    text-decoration:none;
+}
